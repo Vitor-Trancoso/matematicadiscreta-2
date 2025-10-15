@@ -37,6 +37,9 @@ int sigma(int *fatores_primos, int *primos_ate_200, int tamanho_fatores_primos)
 
 int main()
 {
+
+    printf("=== QUESTÃO 3 -> RAZÃO DE EFICIÊNCIA DE UM NÚMERO ===\n\n");
+
     int primos_ate_200[27] = {
         2,
         3,
@@ -74,6 +77,7 @@ int main()
     printf("Digite o número N escolhido para calcularmos a Razão de Eficiência: \n");
 
     scanf("%d", &n);
+    printf("\n");
 
     for (int i = 0; i < 27; i++)
     {
@@ -92,5 +96,5 @@ int main()
 
     double razaoDeEficiencia = (double)valorSigma / (double)valorTau;
 
-    printf("%.2lf\n", razaoDeEficiencia);
+    printf("A Razão de Eficiência de N é = %.2lf\n", razaoDeEficiencia);
 }
